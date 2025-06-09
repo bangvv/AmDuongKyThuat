@@ -1,106 +1,267 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Âm Dương Thuật</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            background: #fdf6f0;
-            color: #333;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Âm Dương Thuật</title>
+<style>
+	body {
+		font-family: 'Segoe UI', sans-serif;
+		margin: 0;
+		background: #fdf6f0;
+		color: #333;
+	}
 
-        header {
-            background: #222;
-            color: #fff;
-            padding: 16px;
-            text-align: center;
-        }
+	header {
+		background: #222;
+		color: #fff;
+		padding: 16px;
+		text-align: center;
+	}
 
-        nav {
-            background: #444;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            padding: 12px;
-        }
+	nav {
+		background: #444;
+		display: flex;
+		justify-content: center;
+		gap: 16px;
+		padding: 12px;
+	}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+	nav a {
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+	}
 
-        nav a:hover {
-            color: #ffd700;
-        }
+	nav a:hover {
+		color: #ffd700;
+	}
 
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.8;
-        }
+	main {
+		max-width: 800px;
+		margin: 40px auto;
+		padding: 0 20px;
+		line-height: 1.8;
+		background: #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+	}
 
-        footer {
-            background: #222;
-            color: #ccc;
-            text-align: center;
-            padding: 16px;
-            margin-top: 40px;
-        }
+	footer {
+		background: #222;
+		color: #ccc;
+		text-align: center;
+		padding: 16px;
+		margin-top: 40px;
+	}
 
-        section.recent-posts {
-            background: #fff8e1;
-            padding: 20px;
-            border-top: 2px solid #eee;
-            margin-top: 40px;
-        }
+	h3 {
+		color: #b45309;
+		margin-top: 1.5em;
+		border-bottom: 2px solid #fbbf24;
+		padding-bottom: 6px;
+	}
 
-        section.recent-posts h2 {
-            color: #b45309;
-            margin-top: 0;
-        }
+	ul#listCat, ul#listHung {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
 
-        section.recent-posts ul {
-            list-style: none;
-            padding-left: 0;
-        }
+	ul#listCat li, ul#listHung li {
+		background-color: #fde68a;
+		padding: 10px 16px;
+		border-radius: 20px;
+		font-weight: 600;
+		box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+		color: #92400e;
+		user-select: none;
+		transition: background-color 0.3s ease;
+	}
 
-        section.recent-posts a {
-            color: #333;
-            text-decoration: none;
-        }
+	ul#listCat li:hover {
+		background-color: #facc15;
+		color: #78350f;
+		cursor: default;
+	}
 
-        section.recent-posts a:hover {
-            text-decoration: underline;
-        }
-    </style>
+	ul#listHung li {
+		background-color: #fecaca;
+		color: #991b1b;
+		box-shadow: 0 2px 6px rgb(153 27 27 / 0.2);
+	}
+
+	ul#listHung li:hover {
+		background-color: #f87171;
+		color: #7f1d1d;
+		cursor: default;
+	}
+
+	.share-buttons {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.share-buttons button {
+		background-color: #3b5998;
+		color: white;
+		border: none;
+		padding: 12px 24px;
+		border-radius: 30px;
+		font-size: 16px;
+		cursor: pointer;
+		font-weight: 700;
+		box-shadow: 0 4px 8px rgb(59 89 152 / 0.4);
+		transition: background-color 0.3s ease;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.share-buttons button:hover {
+		background-color: #2d4373;
+	}
+
+	.share-buttons button.zalo {
+		background-color: #0068ff;
+		box-shadow: 0 4px 8px rgb(0 104 255 / 0.6);
+	}
+
+	.share-buttons button.zalo:hover {
+		background-color: #004ecb;
+	}
+
+	/* Icon style */
+	.share-buttons svg {
+		fill: white;
+		width: 20px;
+		height: 20px;
+	}
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>Âm Dương Thuật</h1>
-        <p>Khám phá vận mệnh theo lối cổ truyền Phương Đông</p>
-    </header>
+	<header>
+		<h1>Âm Dương Thuật</h1>
+		<p>Khám phá vận mệnh theo lối cổ truyền Phương Đông</p>
+	</header>
 
-    <nav>
+	<nav>
 		<a href="../index.html">Trang chủ</a>
 		<a href="../pages/amduongthuat.html">Bói âm dương</a>
 		<a href="../pages/giai81hanamduong.html">81 hạn âm dương</a>
 		<a href="../pages/congiapmayrui.html">Con giáp may-rủi</a>
 		<a href="../pages/donate.html">Donate</a>
-    </nav>
+	</nav>
 
-    <main>
-        <h2>Chào mừng đến với <em>Âm Dương Thuật</em></h2>
-    </main>
+	<main>
+		<div>
+			<h3>Con Giáp Vận Cát hôm nay:</h3>
+			<ul id="listCat"></ul>
 
-    <footer>
-        © 2025 Âm Dương Thuật. Mọi thông tin chỉ mang tính tham khảo văn hóa.
-    </footer>
+			<h3>Con Giáp Vận Hung hôm nay:</h3>
+			<ul id="listHung"></ul>
+
+			<div class="share-buttons">
+				<button id="shareFb" title="Chia sẻ lên Facebook">
+					<!-- Facebook icon SVG -->
+					<svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.98h-2.5v-2.9h2.5v-2.2c0-2.47 1.5-3.83 3.79-3.83 1.1 0 2.25.2 2.25.2v2.48h-1.26c-1.25 0-1.64.78-1.64 1.58v1.77h2.79l-.44 2.9h-2.35v6.98A10 10 0 0 0 22 12z"/></svg>
+					Chia sẻ Facebook
+				</button>
+				<button id="shareZalo" class="zalo" title="Chia sẻ lên Zalo">
+					<!-- Zalo icon SVG -->
+					<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.93 19.13l.13.05.06.02.13.02.12-.03.11-.03.03-.01.02-.01.01-.01.02-.02.04-.04 4.22-4.22 4.1 1.94-3.3-3.28 3.05-3.03-4.52 1.91-4.36-4.36A10 10 0 0 0 12 2zm0 2a8 8 0 0 1 6.9 11.96l-4.4-4.4-3.5 3.5 2.9 1.37-5.92 5.92a8 8 0 1 1-.09-14.45z"/></svg>
+					Chia sẻ Zalo
+				</button>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		© 2025 Âm Dương Thuật. Mọi thông tin chỉ mang tính tham khảo văn hóa.
+	</footer>
+
+<script>
+    const congiap = ["Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi"];
+
+    // 1. Tính ngày thứ trong năm
+    function getDayOfYear(date) {
+        const start = new Date(date.getFullYear(), 0, 0);
+        const diff = date - start + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000);
+        return Math.floor(diff / (1000 * 60 * 60 * 24));
+    }
+
+    // 2. Hàm hash đơn giản: djb2
+    function hashStringToInt(str) {
+        let hash = 5381;
+        for (let i = 0; i < str.length; i++) {
+            hash = ((hash << 5) + hash) + str.charCodeAt(i);
+        }
+        return Math.abs(hash);
+    }
+
+    // 3. Hàm lấy ra n phần tử unique từ mảng, dựa trên số seed
+    function getRandomElements(arr, count, seed) {
+        const result = [];
+        const copy = arr.slice();
+        let currentSeed = seed;
+
+        function seededRandom() {
+            currentSeed = (currentSeed * 9301 + 49297) % 233280;
+            return currentSeed / 233280;
+        }
+
+        while (result.length < count && copy.length > 0) {
+            const index = Math.floor(seededRandom() * copy.length);
+            result.push(copy.splice(index, 1)[0]);
+        }
+        return result;
+    }
+
+    // Main:
+    const today = new Date();
+    const dayOfYear = getDayOfYear(today);
+    const year = today.getFullYear();
+
+    const key = `${dayOfYear}_${year}`;
+    const seed = hashStringToInt(key);
+
+    const cat = getRandomElements(congiap, 3, seed);
+    const hung = getRandomElements(congiap.filter(c => !cat.includes(c)), 3, seed + 1);
+
+    const listCatEl = document.getElementById('listCat');
+    const listHungEl = document.getElementById('listHung');
+
+    cat.forEach(c => {
+        const li = document.createElement('li');
+        li.textContent = c;
+        listCatEl.appendChild(li);
+    });
+
+    hung.forEach(c => {
+        const li = document.createElement('li');
+        li.textContent = c;
+        listHungEl.appendChild(li);
+    });
+
+	// Share buttons
+	const pageUrl = encodeURIComponent(window.location.href);
+	const shareText = encodeURIComponent("Hôm nay vận may-rủi của 12 con giáp tại Âm Dương Thuật:");
+
+	document.getElementById('shareFb').addEventListener('click', () => {
+		const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&quote=${shareText}`;
+		window.open(fbUrl, 'fbshare', 'width=600,height=400');
+	});
+
+	document.getElementById('shareZalo').addEventListener('click', () => {
+		const zaloUrl = `https://zalo.me/share?url=${pageUrl}`;
+		window.open(zaloUrl, 'zaloshare', 'width=600,height=400');
+	});
+</script>
 
 </body>
 </html>
