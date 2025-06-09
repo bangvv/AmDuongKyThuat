@@ -1,147 +1,147 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Xem Bói Âm Dương Kỳ Thuật</title>
-    <style>
-        /* Reset box-sizing toàn trang */
-        *, *::before, *::after {
-            box-sizing: border-box;
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Xem Bói Âm Dương Kỳ Thuật</title>
+        <style>
+                /* Reset box-sizing toàn trang */
+                *, *::before, *::after {
+                        box-sizing: border-box;
+                }
+                .container {
+                        max-width: 480px;
+                        margin: 40px auto;
+                        background-color: white;
+                        padding: 24px;
+                        border-radius: 16px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                }
+                h2 {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                        text-align: center;
+                }
+                label {
+                        display: block;
+                        margin-top: 16px;
+                        margin-bottom: 4px;
+                        font-weight: 500;
+                }
+                input {
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 16px;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                }
+                .row {
+                        display: flex;
+                        gap: 10px;
+                        width: 100%;
+                }
+                .row > div {
+                        flex: 1;
+                }
+                button {
+                        width: 100%;
+                        margin-top: 20px;
+                        padding: 12px;
+                        background-color: #2563eb;
+                        color: white;
+                        font-size: 16px;
+                        border: none;
+                        border-radius: 8px;
+                        cursor: pointer;
+                }
+                button:hover {
+                        background-color: #1d4ed8;
+                }
+                .result {
+                        margin-top: 24px;
+                        padding: 16px;
+                        background-color: #f0fdf4;
+                        border: 1px solid #bbf7d0;
+                        border-radius: 12px;
+                }
+                .result p {
+                        margin: 8px 0;
+                }
+		        
+	body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #fdf6f0;
+            color: #333;
         }
-        .container {
-            max-width: 480px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 24px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-        h2 {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 16px;
             text-align: center;
         }
-        label {
-            display: block;
-            margin-top: 16px;
-            margin-bottom: 4px;
-            font-weight: 500;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-        .row {
+
+        nav {
+            background: #444;
             display: flex;
-            gap: 10px;
-            width: 100%;
-        }
-        .row > div {
-            flex: 1;
-        }
-        button {
-            width: 100%;
-            margin-top: 20px;
+            justify-content: center;
+            gap: 16px;
             padding: 12px;
-            background-color: #2563eb;
-            color: white;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
         }
-        button:hover {
-            background-color: #1d4ed8;
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .result {
-            margin-top: 24px;
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
             padding: 16px;
-            background-color: #f0fdf4;
-            border: 1px solid #bbf7d0;
-            border-radius: 12px;
+            margin-top: 40px;
         }
-        .result p {
-            margin: 8px 0;
+
+        section.recent-posts {
+            background: #fff8e1;
+            padding: 20px;
+            border-top: 2px solid #eee;
+            margin-top: 40px;
         }
-		    
-	body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #fdf6f0;
-      color: #333;
-    }
 
-    header {
-      background: #222;
-      color: #fff;
-      padding: 16px;
-      text-align: center;
-    }
+        section.recent-posts h2 {
+            color: #b45309;
+            margin-top: 0;
+        }
 
-    nav {
-      background: #444;
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      padding: 12px;
-    }
+        section.recent-posts ul {
+            list-style: none;
+            padding-left: 0;
+        }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        section.recent-posts a {
+            color: #333;
+            text-decoration: none;
+        }
 
-    nav a:hover {
-      color: #ffd700;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.8;
-    }
-
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 16px;
-      margin-top: 40px;
-    }
-
-    section.recent-posts {
-      background: #fff8e1;
-      padding: 20px;
-      border-top: 2px solid #eee;
-      margin-top: 40px;
-    }
-
-    section.recent-posts h2 {
-      color: #b45309;
-      margin-top: 0;
-    }
-
-    section.recent-posts ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    section.recent-posts a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    section.recent-posts a:hover {
-      text-decoration: underline;
-    }
-    </style>
+        section.recent-posts a:hover {
+            text-decoration: underline;
+        }
+        </style>
 </head>
 <body>
 	<header>
@@ -181,23 +181,23 @@
 
 			<div id="result" class="result" style="display: none;"></div>
 		</div>
-    </main>
+        </main>
 
 
 <script>
 // Các hàm hỗ trợ
 /*
-        function generatePredictions(count, level) {
+                function generatePredictions(count, level) {
 			const subjects = [ "tài chính", "sức khoẻ", "công việc", "tình cảm", 
 				"gia đình", "giao tiếp", "tinh thần", "đầu tư", "học tập", "thói quen cá nhân", 
 				"lịch trình", "kế hoạch", "nghỉ ngơi", "các mối quan hệ"
 			];
 
 
-            const verbs_good = [
-                "có tiến triển tốt", "đang ổn định", "được cải thiện rõ rệt",
-                "thuận lợi", "phát triển", "tăng cường", "đạt được kết quả tích cực"
-            ];
+                        const verbs_good = [
+                                "có tiến triển tốt", "đang ổn định", "được cải thiện rõ rệt",
+                                "thuận lợi", "phát triển", "tăng cường", "đạt được kết quả tích cực"
+                        ];
 
 			const verbs_average = [
 				"cần được duy trì ổn định", "cần được chú ý nhiều hơn", 
@@ -207,230 +207,248 @@
 			];
 
 
-            const verbs_bad = [
-                "gặp khó khăn", "cần thận trọng", "bị ảnh hưởng tiêu cực", "có dấu hiệu giảm sút",
-                "bất ổn", "cần khắc phục", "cần tránh rủi ro"
-            ];
+                        const verbs_bad = [
+                                "gặp khó khăn", "cần thận trọng", "bị ảnh hưởng tiêu cực", "có dấu hiệu giảm sút",
+                                "bất ổn", "cần khắc phục", "cần tránh rủi ro"
+                        ];
 
-            const advs = [
-                "trong thời gian tới", "gần đây", "trong vài tuần tới", "trong tháng tới", "vào quý này",
-                "sắp tới", "trong quý tới"
-            ];
+                        const advs = [
+                                "trong thời gian tới", "gần đây", "trong vài tuần tới", "trong tháng tới", "vào quý này",
+                                "sắp tới", "trong quý tới"
+                        ];
 
-            let verbs;
-            if (level === "good") verbs = verbs_good;
-            else if (level === "average") verbs = verbs_average;
-            else verbs = verbs_bad;
+                        let verbs;
+                        if (level === "good") verbs = verbs_good;
+                        else if (level === "average") verbs = verbs_average;
+                        else verbs = verbs_bad;
 
-            const sentences = new Set();
-            while (sentences.size < count) {
-                const subj = subjects[Math.floor(Math.random() * subjects.length)];
-                const verb = verbs[Math.floor(Math.random() * verbs.length)];
-                const adv = advs[Math.floor(Math.random() * advs.length)];
-                const sentence = `Phần ${subj} ${verb} ${adv}.`;
-                sentences.add(sentence);
-            }
+                        const sentences = new Set();
+                        while (sentences.size < count) {
+                                const subj = subjects[Math.floor(Math.random() * subjects.length)];
+                                const verb = verbs[Math.floor(Math.random() * verbs.length)];
+                                const adv = advs[Math.floor(Math.random() * advs.length)];
+                                const sentence = `Phần ${subj} ${verb} ${adv}.`;
+                                sentences.add(sentence);
+                        }
 
-            return Array.from(sentences);
-        }
+                        return Array.from(sentences);
+                }
 
-        const prediction3m = {
-            good: [
-                "Có cơ hội phát triển trong công việc.",
-                "Tình cảm tiến triển tích cực.",
-                "Sẽ có tin vui về tài chính.",
-                "Mối quan hệ cá nhân có sự cải thiện.",
-                "Tinh thần lạc quan giúp vượt qua khó khăn."
-            ],
-            average: generatePredictions(200, "average"),
-            bad: generatePredictions(200, "bad")
-        };
+                const prediction3m = {
+                        good: [
+                                "Có cơ hội phát triển trong công việc.",
+                                "Tình cảm tiến triển tích cực.",
+                                "Sẽ có tin vui về tài chính.",
+                                "Mối quan hệ cá nhân có sự cải thiện.",
+                                "Tinh thần lạc quan giúp vượt qua khó khăn."
+                        ],
+                        average: generatePredictions(200, "average"),
+                        bad: generatePredictions(200, "bad")
+                };
 
-        const prediction6m = {
-            good: [
-                "Gặp quý nhân phù trợ.",
-                "Thời điểm thích hợp để đầu tư.",
-                "Gia đạo an khang, thuận lợi.",
-                "Sự nghiệp có bước tiến đáng kể.",
-                "Mối quan hệ xã hội được mở rộng."
-            ],
-            average: generatePredictions(200, "average"),
-            bad: generatePredictions(200, "bad")
-        };
+                const prediction6m = {
+                        good: [
+                                "Gặp quý nhân phù trợ.",
+                                "Thời điểm thích hợp để đầu tư.",
+                                "Gia đạo an khang, thuận lợi.",
+                                "Sự nghiệp có bước tiến đáng kể.",
+                                "Mối quan hệ xã hội được mở rộng."
+                        ],
+                        average: generatePredictions(200, "average"),
+                        bad: generatePredictions(200, "bad")
+                };
 
-        function hashStringToNumber(str, max) {
-            let hash = 0;
-            for (let i = 0; i < str.length; i++) {
-                hash = (hash << 5) - hash + str.charCodeAt(i);
-                hash |= 0;
-            }
-            return Math.abs(hash) % max;
-        }
+                function hashStringToNumber(str, max) {
+                        let hash = 0;
+                        for (let i = 0; i < str.length; i++) {
+                                hash = (hash << 5) - hash + str.charCodeAt(i);
+                                hash |= 0;
+                        }
+                        return Math.abs(hash) % max;
+                }
 
-        function chooseGroup(num) {
-            if (num === 0) return "good";
-            if (num === 1) return "average";
-            return "bad";
-        }
+                function chooseGroup(num) {
+                        if (num === 0) return "good";
+                        if (num === 1) return "average";
+                        return "bad";
+                }
 
-        function predict() {
-            const name = document.getElementById("name").value.trim();
-            const dob = document.getElementById("dob").value.trim();     // dd/mm/yyyy
-            const hour = document.getElementById("hour").value.trim();
-            const minute = document.getElementById("minute").value.trim();
+                function predict() {
+                        const name = document.getElementById("name").value.trim();
+                        const dob = document.getElementById("dob").value.trim();         // dd/mm/yyyy
+                        const hour = document.getElementById("hour").value.trim();
+                        const minute = document.getElementById("minute").value.trim();
 
-            const now = new Date();
-            const quarter = Math.floor(now.getMonth() / 3) + 1;
-            const currentQuarter = `${now.getFullYear()}-Q${quarter}`;
+                        const now = new Date();
+                        const quarter = Math.floor(now.getMonth() / 3) + 1;
+                        const currentQuarter = `${now.getFullYear()}-Q${quarter}`;
 
-            const inputKey = `${name}-${dob}-${hour}:${minute}-${currentQuarter}`;
+                        const inputKey = `${name}-${dob}-${hour}:${minute}-${currentQuarter}`;
 
-            const r1 = hashStringToNumber(inputKey + "_3m", 3);
-            const r2 = hashStringToNumber(inputKey + "_6m", 3);
+                        const r1 = hashStringToNumber(inputKey + "_3m", 3);
+                        const r2 = hashStringToNumber(inputKey + "_6m", 3);
 
-            const level1 = chooseGroup(r1);
-            const level2 = chooseGroup(r2);
+                        const level1 = chooseGroup(r1);
+                        const level2 = chooseGroup(r2);
 
-            const index3 = hashStringToNumber(inputKey + "_i3", prediction3m[level1].length);
-            const index6 = hashStringToNumber(inputKey + "_i6", prediction6m[level2].length);
+                        const index3 = hashStringToNumber(inputKey + "_i3", prediction3m[level1].length);
+                        const index6 = hashStringToNumber(inputKey + "_i6", prediction6m[level2].length);
 
-            const result3 = prediction3m[level1][index3];
-            const result6 = prediction6m[level2][index6];
+                        const result3 = prediction3m[level1][index3];
+                        const result6 = prediction6m[level2][index6];
 
-            document.getElementById("result").innerHTML = `
-                <p><strong>Trong 3 tháng tới:</strong> ${result3}</p>
-                <p><strong>Trong 6 tháng tới:</strong> ${result6}</p>
-            `;
-            document.getElementById("result").style.display = "block";
-        }
+                        document.getElementById("result").innerHTML = `
+                                <p><strong>Trong 3 tháng tới:</strong> ${result3}</p>
+                                <p><strong>Trong 6 tháng tới:</strong> ${result6}</p>
+                        `;
+                        document.getElementById("result").style.display = "block";
+                }
 */
 
 
 const hanAmDuong81 = [
-    {"stt":1,"ten":"Thái Cực Sanh Lão","y_nghia":"Vận khí sinh sôi, khởi đầu thuận","loai":"Cát"},
-    {"stt":2,"ten":"Địa Võng Bủa Vây","y_nghia":"Rắc rối, luẩn quẩn","loai":"Hung"},
-    {"stt":3,"ten":"Thanh Long Vận Khởi","y_nghia":"Cát tường, khởi sắc","loai":"Cát"},
-    {"stt":4,"ten":"Phá Toái Hao Tài","y_nghia":"Tranh chấp, thất thoát","loai":"Hung"},
-    {"stt":5,"ten":"Kim Ngọc Mãn Đường","y_nghia":"Gia đạo hưng vượng","loai":"Cát"},
-    {"stt":6,"ten":"Xích Khẩu Khẩu Thiệt","y_nghia":"Thị phi, tranh cãi","loai":"Hung"},
-    {"stt":7,"ten":"Thiên Phúc Quý Nhân","y_nghia":"Quý nhân giúp đỡ","loai":"Cát"},
-    {"stt":8,"ten":"Độc Hỏa Thiêu Thân","y_nghia":"Tai nạn nhỏ, bốc đồng","loai":"Hung"},
-    {"stt":9,"ten":"Thái Âm Chiếu Mệnh","y_nghia":"Nhân duyên vượng","loai":"Cát"},
-    {"stt":10,"ten":"Thiên Cẩu Xâm Nhập","y_nghia":"Kẻ xấu nói xấu","loai":"Hung"},
-    {"stt":11,"ten":"Đại An Hanh Thông","y_nghia":"Bình an, yên ổn","loai":"Cát"},
-    {"stt":12,"ten":"Âm Sát Phản Phúc","y_nghia":"Người thay lòng đổi dạ","loai":"Hung"},
-    {"stt":13,"ten":"Ngọc Đường Xuất Hiện","y_nghia":"Được lòng người","loai":"Cát"},
-    {"stt":14,"ten":"Tiểu Nhân Ám Hại","y_nghia":"Có người phá hoại","loai":"Hung"},
-    {"stt":15,"ten":"Lục Hợp Tụ Tài","y_nghia":"Tụ tài, làm ăn tốt","loai":"Cát"},
-    {"stt":16,"ten":"Kiếp Sát Phá Tài","y_nghia":"Mất tiền, lừa đảo","loai":"Hung"},
-    {"stt":17,"ten":"Tử Vi Hiển Đạt","y_nghia":"Danh vọng, cơ hội lớn","loai":"Cát"},
-    {"stt":18,"ten":"Tang Môn U Ám","y_nghia":"Tang sự, chuyện buồn","loai":"Hung"},
-    {"stt":19,"ten":"Văn Xương Khai Trí","y_nghia":"Học hành, thi cử thuận","loai":"Cát"},
-    {"stt":20,"ten":"Bạch Hổ Hung Hại","y_nghia":"Họa huyết quang","loai":"Hung"},
-    {"stt":21,"ten":"Thiên Đức Hộ Thân","y_nghia":"Có quý thần bảo hộ","loai":"Cát"},
-    {"stt":22,"ten":"Ngũ Quỷ Phá Sự","y_nghia":"Tiểu nhân quấy phá","loai":"Hung"},
-    {"stt":23,"ten":"Thiên Lộc Đáo Môn","y_nghia":"Lộc bất ngờ","loai":"Cát"},
-    {"stt":24,"ten":"Lưu Niên Tai Họa","y_nghia":"Năm xấu, tai nạn","loai":"Hung"},
-    {"stt":25,"ten":"Tam Thai Khai Hoa","y_nghia":"Tình duyên khởi sắc","loai":"Cát"},
-    {"stt":26,"ten":"Quan Phù Cản Trở","y_nghia":"Pháp lý, kiện tụng","loai":"Hung"},
-    {"stt":27,"ten":"Long Trì Phù Trợ","y_nghia":"Gặp quý nhân, tiến thân","loai":"Cát"},
-    {"stt":28,"ten":"Thiên Hình Phạt Vạ","y_nghia":"Dính hình phạt","loai":"Hung"},
-    {"stt":29,"ten":"Hồng Loan Đào Hoa","y_nghia":"Tình duyên, giao tiếp tốt","loai":"Cát"},
-    {"stt":30,"ten":"Cô Thần Cô Độc","y_nghia":"Ít người hỗ trợ","loai":"Hung"},
-    {"stt":31,"ten":"Thiên Tài Lộc Mãnh","y_nghia":"Tài lộc mạnh mẽ","loai":"Cát"},
-    {"stt":32,"ten":"Tử Phù Trở Ngại","y_nghia":"Bế tắc, không thông","loai":"Hung"},
-    {"stt":33,"ten":"Thiên Hỷ Đại Cát","y_nghia":"Tin vui, đại cát","loai":"Cát"},
-    {"stt":34,"ten":"Quan Sát Canh Đề","y_nghia":"Bị giám sát, thị phi","loai":"Hung"},
-    {"stt":35,"ten":"Tả Phù Hữu Bật","y_nghia":"Có người giúp đỡ","loai":"Cát"},
-    {"stt":36,"ten":"Tang Dương Hạn Cũ","y_nghia":"Chuyện buồn dai dẳng","loai":"Hung"},
-    {"stt":37,"ten":"Thiên Khôi Lộc Mã","y_nghia":"Cơ hội thăng tiến","loai":"Cát"},
-    {"stt":38,"ten":"Thương Quan Cản Mệnh","y_nghia":"Bị chèn ép","loai":"Hung"},
-    {"stt":39,"ten":"Giải Thần Giải Hạn","y_nghia":"Hóa giải vận xấu","loai":"Cát"},
-    {"stt":40,"ten":"Kim Thủy Hòa Điệu","y_nghia":"Hòa thuận, ổn định","loai":"Cát"},
-    {"stt":41,"ten":"Tán Tài Thất Thoát","y_nghia":"Mất tiền nhỏ","loai":"Hung"},
-    {"stt":42,"ten":"Thiên Mã Di Chuyển","y_nghia":"Dời chỗ ở, thay đổi","loai":"Trung"},
-    {"stt":43,"ten":"Thiên Tướng Phù Chính","y_nghia":"Có uy tín, thăng tiến","loai":"Cát"},
-    {"stt":44,"ten":"Kình Dương Mạnh Mẽ","y_nghia":"Cứng đầu, quyết đoán","loai":"Trung"},
-    {"stt":45,"ten":"Thái Tuế Trở Ngại","y_nghia":"Năm xấu, nên thủ","loai":"Hung"},
-    {"stt":46,"ten":"Hỷ Thần Hỷ Sự","y_nghia":"Vui vẻ, chuyện tốt","loai":"Cát"},
-    {"stt":47,"ten":"Huyền Vũ Che Giấu","y_nghia":"Có điều giấu giếm","loai":"Hung"},
-    {"stt":48,"ten":"Thiên Phúc Bảo Hộ","y_nghia":"Có quý nhân âm thầm trợ lực","loai":"Cát"},
-    {"stt":49,"ten":"Phục Binh Gian Trá","y_nghia":"Bị lừa, kẻ xấu","loai":"Hung"},
-    {"stt":50,"ten":"Văn Khúc Học Vấn","y_nghia":"Học giỏi, sáng tạo","loai":"Cát"},
-    {"stt":51,"ten":"Lộc Tồn Đắc Phúc","y_nghia":"Lộc đến, bất ngờ","loai":"Cát"},
-    {"stt":52,"ten":"Địa Không Mất Lộc","y_nghia":"Lộc không giữ được","loai":"Hung"},
-    {"stt":53,"ten":"Đào Hoa Cung Mệnh","y_nghia":"Duyên phận tốt","loai":"Cát"},
-    {"stt":54,"ten":"Cô Quả Buồn Phiền","y_nghia":"Cô đơn, khó gần","loai":"Hung"},
-    {"stt":55,"ten":"Thiên Đức Giải Trừ","y_nghia":"Giải trừ tai họa","loai":"Cát"},
-    {"stt":56,"ten":"Kiếp Tài Hao Mất","y_nghia":"Tham dễ thua","loai":"Hung"},
-    {"stt":57,"ten":"Hữu Bật Gặp Gỡ Tốt","y_nghia":"Gặp người tốt","loai":"Cát"},
-    {"stt":58,"ten":"Bạch Hổ Hung Tinh","y_nghia":"Họa đổ máu","loai":"Hung"},
-    {"stt":59,"ten":"Tử Vi Quyền Uy","y_nghia":"Quyền lực, địa vị","loai":"Cát"},
-    {"stt":60,"ten":"Phi Liêm Biến Động","y_nghia":"Thay đổi đột ngột","loai":"Trung"},
-    {"stt":61,"ten":"Quốc Ấn Công Danh","y_nghia":"Danh tiếng, địa vị","loai":"Cát"},
-    {"stt":62,"ten":"Thiên Không Mờ Mịt","y_nghia":"Kế hoạch không rõ","loai":"Hung"},
-    {"stt":63,"ten":"Lưu Hà Phiền Muộn","y_nghia":"Phiền muộn tình cảm","loai":"Hung"},
-    {"stt":64,"ten":"Hóa Khoa Cứu Giải","y_nghia":"Giải nguy, cứu hạn","loai":"Cát"},
-    {"stt":65,"ten":"Thiên Hình Hung Khắc","y_nghia":"Tai nạn, pháp lý","loai":"Hung"},
-    {"stt":66,"ten":"Tán Tài Ly Tán","y_nghia":"Mất của, rạn nứt","loai":"Hung"},
-    {"stt":67,"ten":"Hóa Lộc Vượng Phát","y_nghia":"Phát tài mạnh mẽ","loai":"Cát"},
-    {"stt":68,"ten":"Địa Kiếp Phá Hại","y_nghia":"Bị thiệt hại, tai nạn","loai":"Hung"},
-    {"stt":69,"ten":"Thiên Trù Bổ Trợ","y_nghia":"Có người giúp đỡ","loai":"Cát"},
-    {"stt":70,"ten":"Sát Phá Hao Tán","y_nghia":"Thiệt hại lớn","loai":"Hung"},
-    {"stt":71,"ten":"Thiên Mã Hành Thổ","y_nghia":"Di chuyển, thay đổi","loai":"Trung"},
-    {"stt":72,"ten":"Phúc Đức Chồng Chất","y_nghia":"Phúc lớn, may mắn","loai":"Cát"},
-    {"stt":73,"ten":"Thiên Cơ Bí Ẩn","y_nghia":"Nhiều bí ẩn, khó đoán","loai":"Trung"},
-    {"stt":74,"ten":"Thiên Hư Hỗn Loạn","y_nghia":"Hỗn loạn, xáo trộn","loai":"Hung"},
-    {"stt":75,"ten":"Thiên Quan Tránh Hại","y_nghia":"Tránh được nguy hiểm","loai":"Cát"},
-    {"stt":76,"ten":"Phục Binh Thâm Nọc","y_nghia":"Âm mưu, phá hoại","loai":"Hung"},
-    {"stt":77,"ten":"Thiên Việt Giải Cứu","y_nghia":"Giải cứu kịp thời","loai":"Cát"},
-    {"stt":78,"ten":"Kiếp Sát Tụ Phá","y_nghia":"Gặp kẻ phá hoại","loai":"Hung"},
-    {"stt":79,"ten":"Thiên Mã Phiêu Bạt","y_nghia":"Di chuyển xa, bất ổn","loai":"Trung"},
-    {"stt":80,"ten":"Thiên Đức Thêm Phúc","y_nghia":"Phúc tăng thêm","loai":"Cát"},
-    {"stt":81,"ten":"Ngũ Quỷ Hại Mệnh","y_nghia":"Họa hại nặng","loai":"Hung"}
+	{"stt":1,"ten":"Thái Cực Sanh Lão","y_nghia":"Bắt đầu tốt, vận khí sinh sôi","loai":"Cát"},
+	{"stt":2,"ten":"Địa Võng Bủa Vây","y_nghia":"Rối rắm, dễ sa vào vòng luẩn quẩn","loai":"Hung"},
+	{"stt":3,"ten":"Thanh Long Vận Khởi","y_nghia":"Cát tường, vận thế khởi sắc","loai":"Cát"},
+	{"stt":4,"ten":"Phá Toái Hao Tài","y_nghia":"Mất mát, tranh chấp, tài lộc thất thoát","loai":"Hung"},
+	{"stt":5,"ten":"Kim Ngọc Mãn Đường","y_nghia":"Hưng vượng, gia đạo ổn định","loai":"Cát"},
+	{"stt":6,"ten":"Xích Khẩu Khẩu Thiệt","y_nghia":"Thị phi, khẩu thiệt, tranh cãi","loai":"Hung"},
+	{"stt":7,"ten":"Thiên Phúc Quý Nhân","y_nghia":"Gặp may, quý nhân tương trợ","loai":"Cát"},
+	{"stt":8,"ten":"Độc Hỏa Thiêu Thân","y_nghia":"Tai nạn nhỏ, nóng nảy mà hại thân","loai":"Hung"},
+	{"stt":9,"ten":"Thái Âm Chiếu Mệnh","y_nghia":"Phụ nữ trợ lực, nhân duyên vượng ","loai":"Cát"},
+	{"stt":10,"ten":"Thiên Cẩu Xâm Nhập","y_nghia":"Thị phi, kẻ xấu nói xấu sau lưng ","loai":"Hung"},
+	{"stt":11,"ten":"Đại An Hanh Thông","y_nghia":"Bình an, yên ổn, ít biến động","loai":"Cát"},
+	{"stt":12,"ten":"Âm Sát Phản Phúc","y_nghia":"Dễ bị trở mặt, lòng người thay đổi","loai":"Hung"},
+	{"stt":13,"ten":"Ngọc Đường Xuất Hiện","y_nghia":"Vận sáng, được lòng người trên","loai":"Cát"},
+	{"stt":14,"ten":"Tiểu Nhân Ám Hại","y_nghia":"Có người phá hoại âm thầm","loai":"Hung"},
+	{"stt":15,"ten":"Lục Hợp Tụ Tài","y_nghia":"Tụ tài, làm ăn khá giả","loai":"Cát"},
+	{"stt":16,"ten":"Kiếp Sát Phá Tài","y_nghia":"Hao tổn, lừa đảo, mất tiền","loai":"Hung"},
+	{"stt":17,"ten":"Tử Vi Hiển Đạt","y_nghia":"Sự nghiệp thăng tiến, có cơ hội lớn","loai":"Cát"},
+	{"stt":18,"ten":"Tang Môn U Ám","y_nghia":"Tang sự, chuyện buồn, trầm cảm","loai":"Hung"},
+	{"stt":19,"ten":"Văn Xương Khai Trí","y_nghia":"Học hành tốt, thi cử hanh thông","loai":"Cát"},
+	{"stt":20,"ten":"Bạch Hổ Hung Hại","y_nghia":"Gặp tai nạn, họa huyết quang, kẻ mạnh áp chế ","loai":"Hung"},
+	{"stt":21,"ten":"Thiên Đức Hộ Thân","y_nghia":"Có phúc khí bảo vệ, tai qua nạn khỏi ","loai":"Cát"},
+	{"stt":22,"ten":"Ngũ Quỷ Phá Sự","y_nghia":"Tiểu nhân quấy phá, công việc trục trặc","loai":"Hung"},
+	{"stt":23,"ten":"Thiên Lộc Đáo Môn","y_nghia":"Lộc đến, tài chính bất ngờ","loai":"Cát"},
+	{"stt":24,"ten":"Lưu Niên Tai Họa","y_nghia":"Năm xấu, dễ gặp chuyện bất trắc","loai":"Hung"},
+	{"stt":25,"ten":"Tam Thai Khai Hoa","y_nghia":"Tình duyên khởi sắc, thuận lợi","loai":"Cát"},
+	{"stt":26,"ten":"Quan Phù Cản Trở","y_nghia":"Dễ bị kiện tụng, liên quan pháp lý","loai":"Hung"},
+	{"stt":27,"ten":"Long Trì Phù Trợ","y_nghia":"Gặp quý nhân, tiến thân dễ dàng","loai":"Cát"},
+	{"stt":28,"ten":"Thiên Hình Phạt Vạ","y_nghia":"Có thể dính dáng đến hình phạt, phạm sai lầm ","loai":"Hung"},
+	{"stt":29,"ten":"Hồng Loan Đào Hoa","y_nghia":"Giao tiếp, tình duyên vượng","loai":"Cát"},
+	{"stt":30,"ten":"Cô Thần Cô Độc","y_nghia":"Lạnh lẽo, ít người hỗ trợ","loai":"Hung"},
+	{"stt":31,"ten":"Thiên Tài Lộc Mãnh","y_nghia":"Vượng tài, làm ăn may mắn","loai":"Cát"},
+	{"stt":32,"ten":"Tử Phù Trở Ngại","y_nghia":"Khó phát triển, tiến lui đều khó ","loai":"Hung"},
+	{"stt":33,"ten":"Thiên Hỷ Đại Cát","y_nghia":"Đại cát, cưới hỏi, vui vẻ","loai":"Cát"},
+	{"stt":34,"ten":"Quan Sát Canh Đề","y_nghia":"Có người theo dõi, cần cẩn trọng lời ăn tiếng nói","loai":"Hung"},
+	{"stt":35,"ten":"Tả Phù Hữu Bật","y_nghia":"Có người hỗ trợ hai bên","loai":"Cát"},
+	{"stt":36,"ten":"Tang Dương Hạn Cũ","y_nghia":"Khó dứt điểm chuyện cũ, buồn phiền","loai":"Hung"},
+	{"stt":37,"ten":"Thiên Khôi Lộc Mã","y_nghia":"Được đề bạt, cơ hội thăng tiến","loai":"Cát"},
+	{"stt":38,"ten":"Thương Quan Cản Mệnh","y_nghia":"Bị chèn ép trong công việc, khó thăng tiến","loai":"Hung"},
+	{"stt":39,"ten":"Giải Thần Giải Hạn","y_nghia":"Có cơ hội hóa giải vận xấu","loai":"Cát"},
+	{"stt":40,"ten":"Kim Thủy Hòa Điệu","y_nghia":"Hòa hợp gia đạo, công việc ổn định","loai":"Cát"},
+	{"stt":41,"ten":"Tán Tài Thất Thoát","y_nghia":"Mất tiền, đầu tư lỗ, bị trộm cắp","loai":"Hung"},
+	{"stt":42,"ten":"Thiên Mã Di Chuyển","y_nghia":"Biến động, dễ đổi việc, dời chỗ ở","loai":"Trung"},
+	{"stt":43,"ten":"Thiên Tướng Phù Chính","y_nghia":"Có uy tín, được cấp trên tin tưởng","loai":"Cát"},
+	{"stt":44,"ten":"Kình Dương Mạnh Mẽ","y_nghia":"Quyết đoán nhưng dễ cứng đầu ","loai":"Trung"},
+	{"stt":45,"ten":"Thái Tuế Trở Ngại","y_nghia":"Gặp năm hạn, nên thủ chứ không nên tiến","loai":"Hung"},
+	{"stt":46,"ten":"Hỷ Thần Hỷ Sự","y_nghia":"Có tin vui, sinh con, cưới hỏi","loai":"Cát"},
+	{"stt":47,"ten":"Huyền Vũ Che Giấu","y_nghia":"Có điều che giấu, cần thận trọng ","loai":"Hung"},
+	{"stt":48,"ten":"Thiên Phúc Bảo Hộ","y_nghia":"Có quý thần giúp đỡ trong thầm lặng","loai":"Cát"},
+	{"stt":49,"ten":"Phục Binh Gian Trá","y_nghia":"Bị lừa lọc, gặp người hai mặt","loai":"Hung"},
+	{"stt":50,"ten":"Văn Khúc Học Vấn","y_nghia":"Thuận lợi trong thi cử, sáng tạo nghệ thuật","loai":"Cát"},
+	{"stt":51,"ten":"Lộc Tồn Đắc Phúc","y_nghia":"Có lộc, nhận được của cải bất ngờ","loai":"Cát"},
+	{"stt":52,"ten":"Địa Không Mất Lộc","y_nghia":"Dễ mất của, đầu tư lỗ","loai":"Hung"},
+	{"stt":53,"ten":"Đào Hoa Cung Mệnh","y_nghia":"Tình cảm tốt, được chú ý ","loai":"Cát"},
+	{"stt":54,"ten":"Cô Quả Buồn Phiền","y_nghia":"Cảm thấy cô đơn, khó hòa nhập","loai":"Hung"},
+	{"stt":55,"ten":"Thiên Đức Giải Trừ","y_nghia":"Giải hạn, bớt rủi ro ","loai":"Cát"},
+	{"stt":56,"ten":"Kiếp Tài Hao Mất","y_nghia":"Cần tránh tham vọng, dễ thua thiệt","loai":"Hung"},
+	{"stt":57,"ten":"Hữu Bật Gặp Gỡ Tốt","y_nghia":"Có bạn tốt, đối tác tốt","loai":"Cát"},
+	{"stt":58,"ten":"Bạch Hổ Hung Tinh","y_nghia":"Đề phòng tai nạn, đặc biệt dao kéo","loai":"Hung"},
+	{"stt":59,"ten":"Tử Vi Quyền Uy","y_nghia":"Có uy thế, đạt vị trí cao","loai":"Cát"},
+	{"stt":60,"ten":"Phi Liêm Biến Động","y_nghia":"Nhiều thay đổi nhanh chóng","loai":"Trung"},
+	{"stt":61,"ten":"Quốc Ấn Công Danh","y_nghia":"Có danh tiếng, địa vị","loai":"Cát"},
+	{"stt":62,"ten":"Thiên Không Mờ Mịt","y_nghia":"Kế hoạch không rõ ràng, dễ thất bại","loai":"Hung"},
+	{"stt":63,"ten":"Lưu Hà Phiền Muộn","y_nghia":"Có chuyện tình cảm buồn","loai":"Hung"},
+	{"stt":64,"ten":"Hóa Khoa Cứu Giải","y_nghia":"Có thể giải trừ rắc rối","loai":"Cát"},
+	{"stt":65,"ten":"Thiên Hình Hung Khắc","y_nghia":"Dễ dính pháp lý, tai nạn nhỏ ","loai":"Hung"},
+	{"stt":66,"ten":"Tán Tài Ly Tán","y_nghia":"Gia đình xung đột, thất thoát tiền bạc","loai":"Hung"},
+	{"stt":67,"ten":"Hóa Lộc Vượng Phát","y_nghia":"Vận tài phát triển, làm ăn tốt","loai":"Cát"},
+	{"stt":68,"ten":"Địa Kiếp Phá Hại","y_nghia":"Tai nạn, bệnh tật, thiệt hại ","loai":"Hung"},
+	{"stt":69,"ten":"Thiên Trù May Mắn","y_nghia":"Có quý nhân trong ăn uống, tiền bạc","loai":"Cát"},
+	{"stt":70,"ten":"Tiểu Hao Tổn Hao","y_nghia":"Mất của nhỏ, cần cẩn trọng","loai":"Hung"},
+	{"stt":71,"ten":"Địa Tài Thuận Lợi","y_nghia":"Đất đai, đầu tư bất động sản thuận","loai":"Cát"},
+	{"stt":72,"ten":"Đại Hao Đại Tổn","y_nghia":"Mất mát lớn, đầu tư rủi ro","loai":"Hung"},
+	{"stt":73,"ten":"Thái Dương Chiếu Sáng","y_nghia":"Vượng dương, công danh rực rỡ","loai":"Cát"},
+	{"stt":74,"ten":"Địa Tặc Trộm Cắp","y_nghia":"Cẩn thận mất cắp, trộm nội bộ","loai":"Hung"},
+	{"stt":75,"ten":"Thiên Mã Xuất Ngoại","y_nghia":"Đi xa, ra nước ngoài ","loai":"Trung"},
+	{"stt":76,"ten":"Tiểu Nhân Ganh Ghét","y_nghia":"Dễ bị chơi xấu, bị nói xấu","loai":"Hung"},
+	{"stt":77,"ten":"Tử Phù Bế Tắc","y_nghia":"Công việc đình trệ, không thông","loai":"Hung"},
+	{"stt":78,"ten":"Thiên Lộc Lộc May","y_nghia":"Lộc trời cho, bất ngờ","loai":"Cát"},
+	{"stt":79,"ten":"Bệnh Phù Đau Ốm","y_nghia":"Dễ ốm vặt, sức khỏe không ổn ","loai":"Hung"},
+	{"stt":80,"ten":"Phá Vận Tương Tàn","y_nghia":"Vận cực xấu, dễ đổ vỡ mọi thứ","loai":"Hung"},
+	{"stt":81,"ten":"Cát Vận Hoàn Mãn","y_nghia":"Đại cát, vận kết thúc viên mãn","loai":"Cát"}
 ];
 
 // Hàm hash chuỗi về số nguyên dương
 function hashString(str) {
-    let hash = 0;
-    for(let i=0; i<str.length; i++){
-        hash = (hash * 31 + str.charCodeAt(i)) >>> 0;
-    }
-    return hash;
+	let hash = 0;
+	for(let i=0; i<str.length; i++){
+			hash = (hash * 31 + str.charCodeAt(i)) >>> 0;
+	}
+	return hash;
 }
 
 function getHanAmDuong(name, dob, hour, minute, currentMonth) {
-    // Ghép chuỗi
-    const str = `${name}_${dob}_${hour}_${minute}_${currentMonth}`;
-    const hash = hashString(str);
-    // Lấy index trong 0..80
-    const idx = hash % hanAmDuong81.length;
-    return hanAmDuong81[idx];
+	// Ghép chuỗi
+	const str = `${name}_${dob}_${hour}_${minute}_${currentMonth}`;
+	const hash = hashString(str);
+	// Lấy index trong 0..80
+	const idx = hash % hanAmDuong81.length;
+	return hanAmDuong81[idx];
 }
 
+function isValidDate(dob) {
+	const dateRegex = /^\d{2}\/\d{2}\/\d{4}$/;
+    if (!dateRegex.test(dob)) return false;
+
+    const [day, month, year] = dob.split("/").map(Number);
+    const date = new Date(year, month - 1, day);
+
+    // Kiểm tra ngày có thực sự tồn tại
+    return (
+        date.getFullYear() === year &&
+        date.getMonth() === month - 1 &&
+        date.getDate() === day
+    );
+}
+
+
 document.getElementById("checkBtn").addEventListener("click", () => {
-    const name = document.getElementById("name").value.trim();
-    const dob = document.getElementById("dob").value; // yyyy-mm-dd
-    const hour = parseInt(document.getElementById("hour").value);
-    const minute = parseInt(document.getElementById("minute").value);
-    
-    if (!name || !dob || isNaN(hour) || isNaN(minute) 
-        || hour < 0 || hour > 23 || minute < 0 || minute > 59) {
-        alert("Vui lòng nhập đầy đủ và đúng định dạng.");
-        return;
-    }
+        const name = document.getElementById("name").value.trim();
+        const dob = document.getElementById("dob").value; // yyyy-mm-dd
+        const hour = parseInt(document.getElementById("hour").value);
+        const minute = parseInt(document.getElementById("minute").value);
+        
 
-    // Lấy tháng hiện tại tự động
-    const now = new Date();
-    const currentMonth = now.getMonth() + 1;
+	
+        if (!name || !dob || isNaN(hour) || isNaN(minute) 
+                || hour < 0 || hour > 23 || minute < 0 || minute > 59 || !isValidDate(dob)) {
+                alert("Vui lòng nhập đầy đủ và đúng định dạng.");
+                return;
+        }
 
-    const han = getHanAmDuong(name, dob, hour, minute, currentMonth);
-    document.getElementById("result").innerHTML = `
+        // Lấy tháng hiện tại tự động
+        const now = new Date();
+        const currentMonth = now.getMonth() + 1;
+
+        const han = getHanAmDuong(name, dob, hour, minute, currentMonth);
+        document.getElementById("result").innerHTML = `
 		<h3>Vận hạn trong tháng này:</h3>
 		<p><strong>Tên hạn:</strong> ${han.ten}</p>
 		<p><strong>Ý nghĩa:</strong> ${han.y_nghia}</p>
 		<p><strong>Loại vận:</strong> ${han.loai}</p>
-    `;
+        `;
 	document.getElementById("result").style.display = "block";
 });
 
