@@ -1,0 +1,488 @@
+[
+  {
+    "stt": 1,
+    "ten": "Thái Cực Sanh Lão",
+    "y_nghia": "Bắt đầu tốt, vận khí sinh sôi",
+    "loai": "Cát"
+  },
+  {
+    "stt": 2,
+    "ten": "Địa Võng Bủa Vây",
+    "y_nghia": "Rối rắm, dễ sa vào vòng luẩn quẩn",
+    "loai": "Hung"
+  },
+  {
+    "stt": 3,
+    "ten": "Thanh Long Vận Khởi",
+    "y_nghia": "Cát tường, vận thế khởi sắc",
+    "loai": "Cát"
+  },
+  {
+    "stt": 4,
+    "ten": "Phá Toái Hao Tài",
+    "y_nghia": "Mất mát, tranh chấp, tài lộc thất thoát",
+    "loai": "Hung"
+  },
+  {
+    "stt": 5,
+    "ten": "Kim Ngọc Mãn Đường",
+    "y_nghia": "Hưng vượng, gia đạo ổn định",
+    "loai": "Cát"
+  },
+  {
+    "stt": 6,
+    "ten": "Xích Khẩu Khẩu Thiệt",
+    "y_nghia": "Thị phi, khẩu thiệt, tranh cãi",
+    "loai": "Hung"
+  },
+  {
+    "stt": 7,
+    "ten": "Thiên Phúc Quý Nhân",
+    "y_nghia": "Gặp may, quý nhân tương trợ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 8,
+    "ten": "Độc Hỏa Thiêu Thân",
+    "y_nghia": "Tai nạn nhỏ, nóng nảy mà hại thân",
+    "loai": "Hung"
+  },
+  {
+    "stt": 9,
+    "ten": "Thái Âm Chiếu Mệnh",
+    "y_nghia": "Phụ nữ trợ lực, nhân duyên vượng ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 10,
+    "ten": "Thiên Cẩu Xâm Nhập",
+    "y_nghia": "Thị phi, kẻ xấu nói xấu sau lưng ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 11,
+    "ten": "Đại An Hanh Thông",
+    "y_nghia": "Bình an, yên ổn, ít biến động",
+    "loai": "Cát"
+  },
+  {
+    "stt": 12,
+    "ten": "Âm Sát Phản Phúc",
+    "y_nghia": "Dễ bị trở mặt, lòng người thay đổi",
+    "loai": "Hung"
+  },
+  {
+    "stt": 13,
+    "ten": "Ngọc Đường Xuất Hiện",
+    "y_nghia": "Vận sáng, được lòng người trên",
+    "loai": "Cát"
+  },
+  {
+    "stt": 14,
+    "ten": "Tiểu Nhân Ám Hại",
+    "y_nghia": "Có người phá hoại âm thầm",
+    "loai": "Hung"
+  },
+  {
+    "stt": 15,
+    "ten": "Lục Hợp Tụ Tài",
+    "y_nghia": "Tụ tài, làm ăn khá giả",
+    "loai": "Cát"
+  },
+  {
+    "stt": 16,
+    "ten": "Kiếp Sát Phá Tài",
+    "y_nghia": "Hao tổn, lừa đảo, mất tiền",
+    "loai": "Hung"
+  },
+  {
+    "stt": 17,
+    "ten": "Tử Vi Hiển Đạt",
+    "y_nghia": "Sự nghiệp thăng tiến, có cơ hội lớn",
+    "loai": "Cát"
+  },
+  {
+    "stt": 18,
+    "ten": "Tang Môn U Ám",
+    "y_nghia": "Tang sự, chuyện buồn, trầm cảm",
+    "loai": "Hung"
+  },
+  {
+    "stt": 19,
+    "ten": "Văn Xương Khai Trí",
+    "y_nghia": "Học hành tốt, thi cử hanh thông",
+    "loai": "Cát"
+  },
+  {
+    "stt": 20,
+    "ten": "Bạch Hổ Hung Hại",
+    "y_nghia": "Gặp tai nạn, họa huyết quang, kẻ mạnh áp chế ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 21,
+    "ten": "Thiên Đức Hộ Thân",
+    "y_nghia": "Có phúc khí bảo vệ, tai qua nạn khỏi ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 22,
+    "ten": "Ngũ Quỷ Phá Sự",
+    "y_nghia": "Tiểu nhân quấy phá, công việc trục trặc",
+    "loai": "Hung"
+  },
+  {
+    "stt": 23,
+    "ten": "Thiên Lộc Đáo Môn",
+    "y_nghia": "Lộc đến, tài chính bất ngờ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 24,
+    "ten": "Lưu Niên Tai Họa",
+    "y_nghia": "Năm xấu, dễ gặp chuyện bất trắc",
+    "loai": "Hung"
+  },
+  {
+    "stt": 25,
+    "ten": "Tam Thai Khai Hoa",
+    "y_nghia": "Tình duyên khởi sắc, thuận lợi",
+    "loai": "Cát"
+  },
+  {
+    "stt": 26,
+    "ten": "Quan Phù Cản Trở",
+    "y_nghia": "Dễ bị kiện tụng, liên quan pháp lý",
+    "loai": "Hung"
+  },
+  {
+    "stt": 27,
+    "ten": "Long Trì Phù Trợ",
+    "y_nghia": "Gặp quý nhân, tiến thân dễ dàng",
+    "loai": "Cát"
+  },
+  {
+    "stt": 28,
+    "ten": "Thiên Hình Phạt Vạ",
+    "y_nghia": "Có thể dính dáng đến hình phạt, phạm sai lầm ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 29,
+    "ten": "Hồng Loan Đào Hoa",
+    "y_nghia": "Giao tiếp, tình duyên vượng",
+    "loai": "Cát"
+  },
+  {
+    "stt": 30,
+    "ten": "Cô Thần Cô Độc",
+    "y_nghia": "Lạnh lẽo, ít người hỗ trợ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 31,
+    "ten": "Thiên Tài Lộc Mãnh",
+    "y_nghia": "Vượng tài, làm ăn may mắn",
+    "loai": "Cát"
+  },
+  {
+    "stt": 32,
+    "ten": "Tử Phù Trở Ngại",
+    "y_nghia": "Khó phát triển, tiến lui đều khó ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 33,
+    "ten": "Thiên Hỷ Đại Cát",
+    "y_nghia": "Đại cát, cưới hỏi, vui vẻ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 34,
+    "ten": "Quan Sát Canh Đề",
+    "y_nghia": "Có người theo dõi, cần cẩn trọng lời ăn tiếng nói",
+    "loai": "Hung"
+  },
+  {
+    "stt": 35,
+    "ten": "Tả Phù Hữu Bật",
+    "y_nghia": "Có người hỗ trợ hai bên",
+    "loai": "Cát"
+  },
+  {
+    "stt": 36,
+    "ten": "Tang Dương Hạn Cũ",
+    "y_nghia": "Khó dứt điểm chuyện cũ, buồn phiền",
+    "loai": "Hung"
+  },
+  {
+    "stt": 37,
+    "ten": "Thiên Khôi Lộc Mã",
+    "y_nghia": "Được đề bạt, cơ hội thăng tiến",
+    "loai": "Cát"
+  },
+  {
+    "stt": 38,
+    "ten": "Thương Quan Cản Mệnh",
+    "y_nghia": "Bị chèn ép trong công việc, khó thăng tiến",
+    "loai": "Hung"
+  },
+  {
+    "stt": 39,
+    "ten": "Giải Thần Giải Hạn",
+    "y_nghia": "Có cơ hội hóa giải vận xấu",
+    "loai": "Cát"
+  },
+  {
+    "stt": 40,
+    "ten": "Kim Thủy Hòa Điệu",
+    "y_nghia": "Hòa hợp gia đạo, công việc ổn định",
+    "loai": "Cát"
+  },
+  {
+    "stt": 41,
+    "ten": "Tán Tài Thất Thoát",
+    "y_nghia": "Mất tiền, đầu tư lỗ, bị trộm cắp",
+    "loai": "Hung"
+  },
+  {
+    "stt": 42,
+    "ten": "Thiên Mã Di Chuyển",
+    "y_nghia": "Biến động, dễ đổi việc, dời chỗ ở",
+    "loai": "Trung"
+  },
+  {
+    "stt": 43,
+    "ten": "Thiên Tướng Phù Chính",
+    "y_nghia": "Có uy tín, được cấp trên tin tưởng",
+    "loai": "Cát"
+  },
+  {
+    "stt": 44,
+    "ten": "Kình Dương Mạnh Mẽ",
+    "y_nghia": "Quyết đoán nhưng dễ cứng đầu ",
+    "loai": "Trung"
+  },
+  {
+    "stt": 45,
+    "ten": "Thái Tuế Trở Ngại",
+    "y_nghia": "Gặp năm hạn, nên thủ chứ không nên tiến",
+    "loai": "Hung"
+  },
+  {
+    "stt": 46,
+    "ten": "Hỷ Thần Hỷ Sự",
+    "y_nghia": "Có tin vui, sinh con, cưới hỏi",
+    "loai": "Cát"
+  },
+  {
+    "stt": 47,
+    "ten": "Huyền Vũ Che Giấu",
+    "y_nghia": "Có điều che giấu, cần thận trọng ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 48,
+    "ten": "Thiên Phúc Bảo Hộ",
+    "y_nghia": "Có quý thần giúp đỡ trong thầm lặng",
+    "loai": "Cát"
+  },
+  {
+    "stt": 49,
+    "ten": "Phục Binh Gian Trá",
+    "y_nghia": "Bị lừa lọc, gặp người hai mặt",
+    "loai": "Hung"
+  },
+  {
+    "stt": 50,
+    "ten": "Văn Khúc Học Vấn",
+    "y_nghia": "Thuận lợi trong thi cử, sáng tạo nghệ thuật",
+    "loai": "Cát"
+  },
+  {
+    "stt": 51,
+    "ten": "Lộc Tồn Đắc Phúc",
+    "y_nghia": "Có lộc, nhận được của cải bất ngờ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 52,
+    "ten": "Địa Không Mất Lộc",
+    "y_nghia": "Dễ mất của, đầu tư lỗ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 53,
+    "ten": "Đào Hoa Cung Mệnh",
+    "y_nghia": "Tình cảm tốt, được chú ý ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 54,
+    "ten": "Cô Quả Buồn Phiền",
+    "y_nghia": "Cảm thấy cô đơn, khó hòa nhập",
+    "loai": "Hung"
+  },
+  {
+    "stt": 55,
+    "ten": "Thiên Đức Giải Trừ",
+    "y_nghia": "Giải hạn, bớt rủi ro ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 56,
+    "ten": "Kiếp Tài Hao Mất",
+    "y_nghia": "Cần tránh tham vọng, dễ thua thiệt",
+    "loai": "Hung"
+  },
+  {
+    "stt": 57,
+    "ten": "Hữu Bật Gặp Gỡ Tốt",
+    "y_nghia": "Có bạn tốt, đối tác tốt",
+    "loai": "Cát"
+  },
+  {
+    "stt": 58,
+    "ten": "Bạch Hổ Hung Tinh",
+    "y_nghia": "Đề phòng tai nạn, đặc biệt dao kéo",
+    "loai": "Hung"
+  },
+  {
+    "stt": 59,
+    "ten": "Tử Vi Quyền Uy",
+    "y_nghia": "Có uy thế, đạt vị trí cao",
+    "loai": "Cát"
+  },
+  {
+    "stt": 60,
+    "ten": "Phi Liêm Biến Động",
+    "y_nghia": "Nhiều thay đổi nhanh chóng",
+    "loai": "Trung"
+  },
+  {
+    "stt": 61,
+    "ten": "Quốc Ấn Công Danh",
+    "y_nghia": "Có danh tiếng, địa vị",
+    "loai": "Cát"
+  },
+  {
+    "stt": 62,
+    "ten": "Thiên Không Mờ Mịt",
+    "y_nghia": "Kế hoạch không rõ ràng, dễ thất bại",
+    "loai": "Hung"
+  },
+  {
+    "stt": 63,
+    "ten": "Lưu Hà Phiền Muộn",
+    "y_nghia": "Có chuyện tình cảm buồn",
+    "loai": "Hung"
+  },
+  {
+    "stt": 64,
+    "ten": "Hóa Khoa Cứu Giải",
+    "y_nghia": "Có thể giải trừ rắc rối",
+    "loai": "Cát"
+  },
+  {
+    "stt": 65,
+    "ten": "Thiên Hình Hung Khắc",
+    "y_nghia": "Dễ dính pháp lý, tai nạn nhỏ ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 66,
+    "ten": "Tán Tài Ly Tán",
+    "y_nghia": "Gia đình xung đột, thất thoát tiền bạc",
+    "loai": "Hung"
+  },
+  {
+    "stt": 67,
+    "ten": "Hóa Lộc Vượng Phát",
+    "y_nghia": "Vận tài phát triển, làm ăn tốt",
+    "loai": "Cát"
+  },
+  {
+    "stt": 68,
+    "ten": "Địa Kiếp Phá Hại",
+    "y_nghia": "Tai nạn, bệnh tật, thiệt hại ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 69,
+    "ten": "Thiên Trù May Mắn",
+    "y_nghia": "Có quý nhân trong ăn uống, tiền bạc",
+    "loai": "Cát"
+  },
+  {
+    "stt": 70,
+    "ten": "Tiểu Hao Tổn Hao",
+    "y_nghia": "Mất của nhỏ, cần cẩn trọng",
+    "loai": "Hung"
+  },
+  {
+    "stt": 71,
+    "ten": "Địa Tài Thuận Lợi",
+    "y_nghia": "Đất đai, đầu tư bất động sản thuận",
+    "loai": "Cát"
+  },
+  {
+    "stt": 72,
+    "ten": "Đại Hao Đại Tổn",
+    "y_nghia": "Mất mát lớn, đầu tư rủi ro",
+    "loai": "Hung"
+  },
+  {
+    "stt": 73,
+    "ten": "Thái Dương Chiếu Sáng",
+    "y_nghia": "Vượng dương, công danh rực rỡ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 74,
+    "ten": "Địa Tặc Trộm Cắp",
+    "y_nghia": "Cẩn thận mất cắp, trộm nội bộ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 75,
+    "ten": "Thiên Mã Xuất Ngoại",
+    "y_nghia": "Đi xa, ra nước ngoài ",
+    "loai": "Trung"
+  },
+  {
+    "stt": 76,
+    "ten": "Tiểu Nhân Ganh Ghét",
+    "y_nghia": "Dễ bị chơi xấu, bị nói xấu",
+    "loai": "Hung"
+  },
+  {
+    "stt": 77,
+    "ten": "Tử Phù Bế Tắc",
+    "y_nghia": "Công việc đình trệ, không thông",
+    "loai": "Hung"
+  },
+  {
+    "stt": 78,
+    "ten": "Thiên Lộc Lộc May",
+    "y_nghia": "Lộc trời cho, bất ngờ",
+    "loai": "Cát"
+  },
+  {
+    "stt": 79,
+    "ten": "Bệnh Phù Đau Ốm",
+    "y_nghia": "Dễ ốm vặt, sức khỏe không ổn ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 80,
+    "ten": "Phá Vận Tương Tàn",
+    "y_nghia": "Vận cực xấu, dễ đổ vỡ mọi thứ",
+    "loai": "Hung"
+  },
+  {
+    "stt": 81,
+    "ten": "Cát Vận Hoàn Mãn",
+    "y_nghia": "Đại cát, vận kết thúc viên mãn",
+    "loai": "Cát"
+  }
+]

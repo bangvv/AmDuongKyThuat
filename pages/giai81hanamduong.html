@@ -1,106 +1,142 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Âm Dương Thuật</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #fdf6f0;
-      color: #333;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Âm Dương Thuật</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #fdf6f0;
+            color: #333;
+        }
 
-    header {
-      background: #222;
-      color: #fff;
-      padding: 16px;
-      text-align: center;
-    }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+        }
 
-    nav {
-      background: #444;
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      padding: 12px;
-    }
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            padding: 12px;
+        }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    nav a:hover {
-      color: #ffd700;
-    }
+        nav a:hover {
+            color: #ffd700;
+        }
 
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.8;
-    }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+        }
 
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 16px;
-      margin-top: 40px;
-    }
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 16px;
+            margin-top: 40px;
+        }
 
-    section.recent-posts {
-      background: #fff8e1;
-      padding: 20px;
-      border-top: 2px solid #eee;
-      margin-top: 40px;
-    }
+        section.recent-posts {
+            background: #fff8e1;
+            padding: 20px;
+            border-top: 2px solid #eee;
+            margin-top: 40px;
+        }
 
-    section.recent-posts h2 {
-      color: #b45309;
-      margin-top: 0;
-    }
+        section.recent-posts h2 {
+            color: #b45309;
+            margin-top: 0;
+        }
 
-    section.recent-posts ul {
-      list-style: none;
-      padding-left: 0;
-    }
+        section.recent-posts ul {
+            list-style: none;
+            padding-left: 0;
+        }
 
-    section.recent-posts a {
-      color: #333;
-      text-decoration: none;
-    }
+        section.recent-posts a {
+            color: #333;
+            text-decoration: none;
+        }
 
-    section.recent-posts a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        section.recent-posts a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Âm Dương Thuật</h1>
-    <p>Khám phá vận mệnh theo lối cổ truyền Phương Đông</p>
-  </header>
+    <header>
+        <h1>Âm Dương Thuật</h1>
+        <p>Khám phá vận mệnh theo lối cổ truyền Phương Đông</p>
+    </header>
 
-  <nav>
+    <nav>
 		<a href="../index.html">Trang chủ</a>
 		<a href="../pages/amduongthuat.html">Bói âm dương</a>
 		<a href="../pages/giai81hanamduong.html">81 hạn âm dương</a>
 		<a href="../pages/congiapmayrui.html">Con giáp may-rủi</a>
 		<a href="../pages/donate.html">Donate</a>
-  </nav>
+    </nav>
 
-  <main>
-    <h2>Chào mừng đến với <em>Âm Dương Thuật</em></h2>
-  </main>
+	<main>
+	    <h2>Danh sách 81 Vận Hạn Âm Dương</h2>
+	    <table id="vanHanTable" style="width:100%; border-collapse: collapse; margin-top: 20px;">
+		<thead style="background: #fae5c4;">
+		    <tr>
+			<th style="border: 1px solid #ccc; padding: 8px;">STT</th>
+			<th style="border: 1px solid #ccc; padding: 8px;">Tên hạn</th>
+			<th style="border: 1px solid #ccc; padding: 8px;">Ý nghĩa</th>
+			<th style="border: 1px solid #ccc; padding: 8px;">Loại vận</th>
+		    </tr>
+		</thead>
+		<tbody id="vanHanBody"></tbody>
+	    </table>
+	</main>
 
-  <footer>
-    © 2025 Âm Dương Thuật. Mọi thông tin chỉ mang tính tham khảo văn hóa.
-  </footer>
+
+    <footer>
+        © 2025 Âm Dương Thuật. Mọi thông tin chỉ mang tính tham khảo văn hóa.
+    </footer>
+	
+	<script>
+		fetch('81vanhan.json')
+			.then(response => response.json())
+			.then(data => {
+				const tbody = document.getElementById('vanHanBody');
+				data.forEach(item => {
+				const row = document.createElement('tr');
+
+				row.innerHTML = `
+					<td style="border: 1px solid #ccc; padding: 8px;">${item.stt}</td>
+					<td style="border: 1px solid #ccc; padding: 8px;">${item.ten}</td>
+					<td style="border: 1px solid #ccc; padding: 8px;">${item.ynghia}</td>
+					<td style="border: 1px solid #ccc; padding: 8px;">${item.loai}</td>
+				`;
+
+				tbody.appendChild(row);
+				});
+			})
+			.catch(error => {
+			console.error('Lỗi tải dữ liệu:', error);
+		});
+	</script>
 
 </body>
+
 </html>
