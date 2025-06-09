@@ -250,9 +250,17 @@
 
 	// Share buttons
 	const pageUrl = encodeURIComponent(window.location.href);
-	const shareText = encodeURIComponent("Hôm nay vận may-rủi của 12 con giáp tại Âm Dương Thuật:");
+
+	function createShareText(catArr, hungArr) {
+	    const catText = catArr.join(', ');
+	    const hungText = hungArr.join(', ');
+	    return `Hôm nay vận may-rủi của 12 con giáp tại Âm Dương Thuật:\n` +
+	           `Vận Cát: ${catText}\n` +
+	           `Vận Hung: ${hungText}`;
+	}
 
 	document.getElementById('shareFb').addEventListener('click', () => {
+		const shareText = encodeURIComponent(createShareText(cat, hung));
 		const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}&quote=${shareText}`;
 		window.open(fbUrl, 'fbshare', 'width=600,height=400');
 	});
