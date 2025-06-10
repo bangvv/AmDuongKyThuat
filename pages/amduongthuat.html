@@ -446,7 +446,7 @@ document.getElementById("checkBtn").addEventListener("click", () => {
         const now = new Date();
         const currentMonth = now.getMonth() + 1;
 
-        const han = getHanAmDuong(name, dob, hour, minute, currentMonth);
+        const han = getHanAmDuong("",dob, hour, minute, currentMonth);
         document.getElementById("result").innerHTML = `
 		<h3>Vận hạn trong tháng này:</h3>
 		<p><strong>Tên hạn:</strong> ${han.ten}</p>
