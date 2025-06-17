@@ -40,6 +40,13 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://amduongkythuat.hngame.store/trending/amduongtruyen.html</loc>
+    <lastmod>2025-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Thêm các URL khác tại đây theo mẫu trên -->
 
 </urlset>
